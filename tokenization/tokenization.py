@@ -34,7 +34,7 @@ result_list = []
 true_labels = []
 predicted_labels = []
 
-length = 100
+length = 10
 # total_lines = len(lines)
 total_lines = length
 
@@ -50,7 +50,7 @@ for index, line in enumerate(lines[:length]):
     unsegmented_text = ''.join(segmented_words)
 
     # 准备输入到语言模型的内容
-    full_content = unsegmented_text + prompt_text
+    full_content = prompt_text.format(content=unsegmented_text)
 
     # 调用语言模型API
     try:

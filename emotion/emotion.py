@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 # 定义调用模型API的函数
 def invoke_model_api(unsegmented_text, prompt_text):
     try:
-        full_content = unsegmented_text + prompt_text
+        full_content = prompt_text.format(content=unsegmented_text)
         response = zhipuai.model_api.invoke(
             model="chatglm_lite",
             prompt=[{"role": "user", "content": full_content}],

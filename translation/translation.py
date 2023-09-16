@@ -23,7 +23,7 @@ with open('news-commentary-v13.zh-en.en', 'r', encoding='utf-8') as e_file, \
 
 # 2. 调用大模型API进行翻译
 def translate_with_prompt(sentence, prompt):
-    full_content = sentence + ' ' + prompt
+    full_content = prompt.format(content=sentence)
     try:
         response = zhipuai.model_api.invoke(
             model="chatglm_pro",
@@ -44,7 +44,7 @@ translated_sentences = [translate_with_prompt(sentence, prompt) for sentence in 
 bleu_scores = []
 for reference, candidate in zip(chinese_references, translated_sentences):
     reference = list(jieba.cut(reference[0]))
-    bleu_score = sentence_bleu([reference], candidate)
+    bleu_score = sentence_bleu([reference], candidate, weights=(0, 1, 0, 0))
     bleu_scores.append(bleu_score)
     print(f"Reference: {' '.join(reference)}")
     print(f"Candidate: {' '.join(candidate)}")
