@@ -26,7 +26,7 @@
    ```
    pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
    ```
-2. 根据各子任务的`requirement.txt`文件安装所需的Python包。例如：：
+2. 根据各子任务的`requirement.txt`文件安装所需的Python包。例如：
    ```
    pip install -r requirement.txt
    ```
