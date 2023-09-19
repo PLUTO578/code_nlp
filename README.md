@@ -28,7 +28,7 @@
    ```
 2. 根据各子任务的`requirement.txt`文件安装所需的Python包。例如，安装scikit-learn：
    ```
-   pip install scikit-learn
+   pip install -r requirement.txt
    ```
 
 ### 任务执行步骤
