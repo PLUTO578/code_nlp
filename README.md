@@ -45,7 +45,7 @@
    python emotion.py
    ```
 4. 适当修改`prompt`文件中的提示词，尝试提高模型的准确度。
-5. （可选）更改`emotion.py`脚本中的模型参数或尝试使用不同类型的模型来实验提升性能。
+5. （可选）更改`emotion.py`脚本中的模型参数或尝试使用不同类型的模型（脚本中第16到21行）来实验提升性能。
 
 #### 结果输出示例
 ![image](https://github.com/uglyghost/code_nlp/assets/15159177/48a32dd7-5645-4d45-ad62-b340dfc1c1d0)
@@ -62,7 +62,7 @@
    python tokenization.py
    ```
 4. 尝试修改`prompt`文件中的提示词，以提升模型的性能。
-5. （可选）您可以更改`tokenization.py`脚本中的模型参数或尝试使用不同类型的模型进行实验。
+5. （可选）您可以更改`tokenization.py`脚本中的模型参数或尝试使用不同类型的模型（脚本中第57到62行）进行实验。
 
 #### 结果输出示例
 ![image](https://github.com/uglyghost/code_nlp/assets/15159177/1dc434e1-9056-4422-b7ff-632740017632)
@@ -79,7 +79,7 @@
    python translation.py
    ```
 4. 适当调整`prompt`文件中的提示词，尝试提升模型的性能。
-5. （可选）您可以尝试更改`translation.py`脚本中的模型参数或使用不同类型的模型进行实验，以寻找最佳性能配置。
+5. （可选）您可以尝试更改`translation.py`脚本中的模型参数或使用不同类型的模型（脚本中第28到33行）进行实验，以寻找最佳性能配置。
 
 #### 结果输出示例
 ![image](https://github.com/uglyghost/code_nlp/assets/15159177/2f03f9aa-3589-426f-b675-c45cb7a66587)
