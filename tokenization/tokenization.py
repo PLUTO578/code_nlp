@@ -5,8 +5,8 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics import precision_score, recall_score, f1_score
 import zhipuai
 
-# your api key
-zhipuai.api_key = "90779b30f8299535d7fe10b7e665751e.CRcENI5utT45TMsC"
+# 同学们申请的智谱API_KEY: https://open.bigmodel.cn
+zhipuai.api_key = ""
 
 # 配置日志记录
 logging.basicConfig(level=logging.INFO)
@@ -34,7 +34,7 @@ result_list = []
 true_labels = []
 predicted_labels = []
 
-length = 10
+length = 100
 # total_lines = len(lines)
 total_lines = length
 
