@@ -16,8 +16,8 @@
 └── translation
     ├── translation.py (主运行脚本)
     ├── prompt (提示词文件)
-    ├── news-commentary-v13.zh-en.en (翻译数据集)
-    ├── news-commentary-v13.zh-en.zh (翻译数据集)
+    ├── news-commentary-v13.zh-en.en (英语翻译数据集)
+    ├── news-commentary-v13.zh-en.zh (中文翻译数据集)
     └── requirement.txt (环境依赖文件)
 ```
 
