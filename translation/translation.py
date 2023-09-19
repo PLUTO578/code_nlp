@@ -3,14 +3,14 @@ from nltk.translate.bleu_score import sentence_bleu
 import jieba
 import zhipuai
 
-# your api key
-zhipuai.api_key = "90779b30f8299535d7fe10b7e665751e.CRcENI5utT45TMsC"
+# 同学们申请的智谱API_KEY: https://open.bigmodel.cn
+zhipuai.api_key = ""
 
 # 配置日志记录
 logging.basicConfig(level=logging.INFO)
 
 # 读取文档的长度设置
-length = 10
+length = 100
 
 # 1. 读取文本
 with open('news-commentary-v13.zh-en.en', 'r', encoding='utf-8') as e_file, \
@@ -33,6 +33,7 @@ def translate_with_prompt(sentence, prompt):
         )
         logging.info(f"Invoked API with content: {full_content}")
         translation = response['data']['choices'][0]['content'].strip('" ')
+        logging.info(translation+'\n\n')
         return list(jieba.cut(translation))
     except Exception as e:
         logging.error(f"调用API时发生错误: {e}")
