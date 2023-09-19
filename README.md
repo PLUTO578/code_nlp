@@ -65,6 +65,7 @@
 5. （可选）您可以更改`tokenization.py`脚本中的模型参数或尝试使用不同类型的模型进行实验。
 
 #### 结果输出示例
+![image](https://github.com/uglyghost/code_nlp/assets/15159177/1dc434e1-9056-4422-b7ff-632740017632)
 
 
 ### 3. 翻译任务（Translation Task）
