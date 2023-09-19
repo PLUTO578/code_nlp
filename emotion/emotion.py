@@ -2,8 +2,8 @@ import pandas as pd
 import logging
 import zhipuai
 
-# your api key
-zhipuai.api_key = "90779b30f8299535d7fe10b7e665751e.CRcENI5utT45TMsC"
+# 同学们申请的智谱API_KEY: https://open.bigmodel.cn
+zhipuai.api_key = ""
 
 # 日志配置
 logging.basicConfig(level=logging.INFO)
@@ -33,7 +33,7 @@ df = pd.read_csv('weibo_senti_100k.csv', encoding='utf-8')
 with open('prompt', 'r', encoding='utf-8') as file:
     prompt_text = file.read().strip()
 
-length = 10
+length = 100
 
 # 随机选择100行进行测试
 df_sample = df.sample(n=length, random_state=1)
