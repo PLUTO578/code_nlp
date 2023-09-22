@@ -3,7 +3,7 @@ import logging
 import zhipuai
 
 # 同学们申请的智谱API_KEY: https://open.bigmodel.cn
-zhipuai.api_key = ""
+zhipuai.api_key = "659e92b17834f3e32240f388da45c72b.Pea9uvTKdMYBkjTV"
 
 # 日志配置
 logging.basicConfig(level=logging.INFO)
